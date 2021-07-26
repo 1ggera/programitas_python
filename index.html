@@ -1,0 +1,110 @@
+ls = para ver los documentos dentro de un venv
+cat = para ver que hay dentro de un documento. Debemos ejecutar 'cat nombredelarchivo.txt'
+-r = flag (bandera)
+
+**
+
+
+import this:  para llamar The Zen of Python (los 20 principios de software)
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+py > para abrir la consola interactiva
+
+**
+
+Crear un entorno virtual
+
+mkdir <!--para crear la carpeta donde va a vivir. Ingresar-->
+
+git init <!--para dar comienzo al repositorio-->
+
+py -m venv venv <!--indica la llamada al modulo vitual enviroment y creo un entorno virtual al cual llamo venv-->
+
+.\venv\Scripts\activate <!--esto activa el entorno virtual-->
+A partir de ahora ya no utilizamos el python global sino uno clonado que solo funciona con este proyecto.
+
+deactivate <!--para salir del entorno virtual-->
+
+Para no escribir toda el comando activate crearemos un alias.
+
+alias avenv=.\venv\Scripts\activate <!--así creamos el alias-->
+
+avenv <!--así activamos el entorno virtual mediante un alias-->
+
+**
+
+Instalación de dependencias con PIP
+NOTA: pip es como el npm de javascript
+
+	Ir a la carpeta del entorno virtual al que le queremos instalar dependencias (librerías)
+
+	iniciar el venv
+
+
+pip freeze  <!--para ver que modulo ya tenemos instalado-->
+
+pip install pandas <!--librería que sirve para ciencia de datos-->
+
+Para compartir nuestro venv con otro colega crearemos un archivo .txt que le indique que dependencias necesita descargar
+
+Entonces ejecutamos:
+	pip freeze > requirements.txt <!--este archivo guarda las dependencias para que otro compartirlo a otro usuario-->
+Para instalar las dependencias que están dentro de requirements.txt deberá ejecutar
+	pip install -r requirements.txt
+
+Existen otros instaladores de paquetes como pyenv, o pipenv.}
+
+**
+
+Crear un .gitignore para indicar que estos archivos o est carpeta no se sube al repositorio.
+
+**
+LIST COMPREHENSIONS = Es una estructura de Python que se usa para crear nuevas listas.
+ELEMENT for ELEMEMT in ITERABLE if CONDITION (Elemento para cada elemento en el iterable solo si la condición)
+
+
+Qué significa? 
+
+ELEMENT:
+	Representa a cada uno de los elementos a poner en la nueva lista.
+for ELEMEMT in ITERABLE:
+	ciclo a partir del cual se extraerán elementos de otra lista o cualquier iterable.
+if CONDITION:
+	condición opcional para filtrar los elementos del ciclo
+**
+FUNCIONES
+Una función es una forma de reutilizar código y aplicarlo en diferentes lugares.
+
+Una función se crea así:
+
+	def nombre_de_la_funcion(parámetros_de_la_función):
+		cosas_que_hace_la_función
+
+Funciones anónimas: LAMBDA. Son funciones que no tienen un nombre identificador.
+En PYTHON, estas funciones solo pueden tener una sola linea de código.
+En estas funciones no hace falta escribir la palabra return. Devuelven un resultado de forma autommática.
+
+	lambda argumentos:expresión
+
+
+
+
