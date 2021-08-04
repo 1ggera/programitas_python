@@ -12,7 +12,7 @@ Ejercicios con Python:
 3.	Reto2_multi469
 4.	List Comprehensions
 5.	Dict Comprehensions
-6.	elevar3
+6.	Elevar a 3°
 7.	reto3 elevate3
 8.	raizdelosmil
 9.	lambda functions
@@ -25,4 +25,3 @@ Ejercicios con Python:
 16. ej_assert_statements
 17. ¿Cómo trabajar con archivos?
 18. Juego del ahorcado o Hangman game
-19. 
