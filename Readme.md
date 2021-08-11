@@ -24,4 +24,4 @@ Ejercicios con Python:
 15. Assert statements
 16. ej_assert_statements
 17. ¿Cómo trabajar con archivos?
-18. Juego de los paises
+18. Juego de los países
